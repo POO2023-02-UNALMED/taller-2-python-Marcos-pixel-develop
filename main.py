@@ -25,12 +25,12 @@ class Auto:
         asientos = self.cantidadAsientos()
         for i in range(asientos-1):
             if self.asientos[i].registro!=self.asientos[i+1].registro or self.asientos[0].registro!=self.registro:
-                print("Las piezas no son originales")
-                return
+
+                return "Las piezas no son originales"
         if self.motor.registro != self.registro:
-            print("Las piezas no son originales")
+            return "Las piezas no son originales"
         else:
-            print("Auto original")
+            return "Auto original"
 
 
 
